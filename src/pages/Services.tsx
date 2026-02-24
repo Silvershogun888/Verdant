@@ -12,7 +12,7 @@ const services = [
     title: "Precision Farming",
     icon: Sprout,
     desc: "Data-driven insights for optimal crop yield and soil health.",
-    content: "Our precision farming solutions utilize advanced sensors, satellite imagery, and machine learning to monitor crop health, soil moisture, and nutrient levels in real-time. By applying the right inputs at the right time and place, we maximize yield while minimizing environmental impact.",
+    content: "Our precision farming solutions utilize advanced sensors, high-resolution satellite imagery, and sophisticated machine learning algorithms to monitor every acre in real-time. We track crop vigor, soil moisture gradients, and precise nutrient levels to create dynamic prescription maps. By applying the exact resource needed at the specific location and time, we significantly maximize yield potential while drastically reducing the environmental footprint of modern agriculture.",
     features: ["Soil Mapping & Analysis", "Variable Rate Technology", "Yield Monitoring", "Drone Scouting"],
     img: "https://images.unsplash.com/photo-1592982537447-6f2a6a0c5c13?q=80&w=2940&auto=format&fit=crop"
   },
@@ -21,7 +21,7 @@ const services = [
     title: "Irrigation Systems",
     icon: Droplets,
     desc: "Smart water management that conserves resources naturally.",
-    content: "Water is our most precious resource. Our intelligent irrigation systems use localized weather data, soil moisture sensors, and plant water stress indicators to deliver exact amounts of water precisely when needed, reducing waste and improving crop resilience.",
+    content: "Water is our most precious resource, and its management is critical for future sustainability. Our intelligent, autonomous irrigation systems integrate hyper-local weather forecasting with deep-soil moisture sensor networks and real-time plant water-stress indicators. This closed-loop system delivers precise volumes of water to the root zone exactly when needed, eliminating waste, preventing runoff, and building deep crop resilience against regional drought conditions.",
     features: ["Drip Irrigation Design", "Automated Scheduling", "Moisture Sensor Networks", "Water Usage Analytics"],
     img: "https://images.unsplash.com/photo-1586771107445-d3af25164478?q=80&w=2940&auto=format&fit=crop"
   },
@@ -30,7 +30,7 @@ const services = [
     title: "Climate Adaptation",
     icon: Sun,
     desc: "Strategies to thrive in changing environmental conditions.",
-    content: "As weather patterns shift, agricultural practices must evolve. We help farms build resilience through crop diversification, microclimate management, and predictive modeling, ensuring long-term viability in the face of climate uncertainty.",
+    content: "As global weather patterns become increasingly unpredictable, traditional agricultural practices must evolve to stay viable. We empower farms to build long-term resilience through strategic crop diversification, active microclimate management, and advanced predictive modeling. By simulating future climate scenarios, we help producers select the most resilient cultivars and implement protective infrastructure, ensuring operational stability and food security in the face of climate uncertainty.",
     features: ["Risk Assessment", "Microclimate Monitoring", "Resilient Crop Selection", "Extreme Weather Planning"],
     img: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2940&auto=format&fit=crop"
   },
@@ -39,7 +39,7 @@ const services = [
     title: "Air & Soil Quality",
     icon: Wind,
     desc: "Monitoring and improving the foundational elements of growth.",
-    content: "Healthy soil is the foundation of sustainable agriculture. We implement regenerative practices that build soil organic matter, enhance biodiversity, and improve carbon sequestration, leading to naturally fertile and resilient farmland.",
+    content: "Healthy, living soil is the indispensable foundation of a truly sustainable agricultural system. We specialize in implementing science-backed regenerative practices that rebuild soil organic matter, enhance microbial biodiversity, and optimize carbon sequestration pathways. Our holistic approach transforms depleted fields into naturally fertile, sponge-like ecosystems that retain more water, suppress diseases, and provide a stable, nutrient-rich environment for superior crop growth.",
     features: ["Carbon Tracking", "Cover Crop Strategies", "Microbiome Analysis", "Erosion Control"],
     img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2832&auto=format&fit=crop"
   }
@@ -178,7 +178,7 @@ export default function Services() {
 
   return (
     <div className="pt-32 pb-24 px-6 max-w-7xl mx-auto relative flex flex-col lg:flex-row gap-16">
-      
+
       {/* Sticky glass side navigation */}
       <div className="hidden lg:block w-64 shrink-0">
         <div className="sticky top-32">
