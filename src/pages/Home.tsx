@@ -52,7 +52,7 @@ const Hero = () => {
                 of Agriculture
               </motion.h1>
             </div>
-            
+
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -61,7 +61,7 @@ const Hero = () => {
             >
               Precision farming and natural stewardship working in harmony to yield sustainable, breathable ecosystems.
             </motion.p>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ const Services = () => {
               <Link to={`/services#${service.id}`} className="block h-full">
                 <GlassCard className="h-full p-8 group hover:bg-white/80 transition-colors duration-500">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out" />
-                  
+
                   <motion.div
                     initial={{ scale: 0.5, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
@@ -116,7 +116,7 @@ const Services = () => {
                   >
                     <service.icon className="w-6 h-6" />
                   </motion.div>
-                  
+
                   <h3 className="text-xl font-medium text-stone-900 mb-3">{service.title}</h3>
                   <p className="text-stone-600 leading-relaxed">{service.desc}</p>
                 </GlassCard>
@@ -137,7 +137,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-32 px-6 bg-stone-100">
+    <section className="py-32 px-6 bg-stone-100 -mt-[1px] relative z-10">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-end mb-16">
           <div>
@@ -165,7 +165,7 @@ const Projects = () => {
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
               <div className="absolute inset-0 bg-stone-900/20 group-hover:bg-stone-900/40 transition-colors duration-500" />
-              
+
               {/* Glass overlay on hover */}
               <div className="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <GlassCard className="p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
@@ -195,10 +195,10 @@ const AnimatedNumber = ({ value, suffix = "" }: { value: number, suffix?: string
       const updateNumber = (currentTime: number) => {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        
+
         // Ease out expo
         const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-        
+
         setDisplayValue(Math.floor(easeProgress * value));
 
         if (progress < 1) {
@@ -227,7 +227,7 @@ const AnimatedNumber = ({ value, suffix = "" }: { value: number, suffix?: string
 
 const Stats = () => {
   return (
-    <section className="py-24 px-6 bg-stone-50">
+    <section className="py-24 px-6 bg-stone-50 -mt-[1px] relative z-10">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ scaleX: 0 }}
@@ -236,7 +236,7 @@ const Stats = () => {
           transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           className="h-px w-full bg-emerald-200 origin-left mb-16"
         />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           <div>
             <AnimatedNumber value={150} suffix="+" />
@@ -287,7 +287,7 @@ const CTA = () => {
                 <rect x="1" y="1" width="100%" height="100%" rx="16" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="2" />
               </svg>
             </motion.div>
-            
+
             <h2 className="text-3xl md:text-5xl font-medium text-white mb-6">Ready to cultivate your future?</h2>
             <p className="text-emerald-50 text-lg mb-10 max-w-xl mx-auto">
               Partner with us to bring sustainable, precision agriculture to your land.
