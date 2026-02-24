@@ -6,24 +6,15 @@ export const PageTransition = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       <motion.div
         key={location.pathname}
-        initial={{
-          clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
-          opacity: 0.8,
-        }}
-        animate={{
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-          opacity: 1,
-        }}
-        exit={{
-          clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)",
-          opacity: 0,
-        }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
         transition={{
-          duration: 0.4,
-          ease: [0.22, 1, 0.36, 1],
+          duration: 0.3,
+          ease: "easeOut",
         }}
         className="w-full h-full min-h-screen bg-stone-50 text-stone-900"
       >
