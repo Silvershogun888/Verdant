@@ -18,12 +18,12 @@ export const PageTransition = ({ children }: { children: React.ReactNode }) => {
           opacity: 1,
         }}
         exit={{
-          clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
-          opacity: 0.8,
+          clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)",
+          opacity: 0,
         }}
         transition={{
-          duration: 0.7,
-          ease: [0.22, 1, 0.36, 1], // Soft ease out
+          duration: 0.4,
+          ease: [0.22, 1, 0.36, 1],
         }}
         className="w-full h-full min-h-screen bg-stone-50 text-stone-900"
       >
