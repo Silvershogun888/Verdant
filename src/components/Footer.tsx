@@ -4,7 +4,7 @@ import { Leaf } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-stone-900 text-stone-400 py-16 px-6 mt-24">
+    <footer className="bg-stone-900 text-stone-400 py-16 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-1">
           <Link to="/" className="flex items-center gap-2 text-stone-100 font-medium text-xl mb-6">

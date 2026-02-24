@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@layer base {
+  section, footer, header, main {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Prevent sub-pixel gaps between adjacent sections with different backgrounds */
+section {
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+}
